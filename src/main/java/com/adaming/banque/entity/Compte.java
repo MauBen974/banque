@@ -25,9 +25,9 @@ public class Compte implements Serializable{
 	/**
 	 * 
 	 */
+	private static final long serialVersionUID = 1L;
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
-	private static final long serialVersionUID = 1L;
 	private Long idCompte;
 	private String dateCreation;
 	private double solde;
@@ -35,9 +35,8 @@ public class Compte implements Serializable{
 	//Constructors
 	public Compte() {
 	}
-	public Compte(Long idCompte, String dateCreation, double solde) {
+	public Compte(String dateCreation, double solde) {
 		super();
-		this.idCompte = idCompte;
 		this.dateCreation = dateCreation;
 		this.solde = solde;
 	}
